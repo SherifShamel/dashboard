@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assingment 8</title>
+
+    <!-- styles -->
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <script src="https://kit.fontawesome.com/f50fbec728.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <main>
+        <h1 class="text-center">My Great Dashboard</h1>
+        <div class="w-75 mx-auto my-5">
+            <div class="form-floating mb-4">
+                <input type="text" class="form-control" id="productName" placeholder="name">
+                <label for="productName">Product Name</label>
+            </div>
+
+            <div class="form-floating mb-3">
+                <input type="number" class="form-control" id="productPrice" placeholder="price">
+                <label for="productPrice">Product Price</label>
+            </div>
+
+            <div class="form-floating mb-3">
+                <input list="myList" type="text" class="form-control" id="productCategory" placeholder="ategory">
+                <label for="productCategory">Product Category</label>
+                <datalist id="myList">
+                    <option value="Tv"></option>
+                    <option value="Screen"></option>
+                    <option value="Mobile"></option>
+                    <option value="Laptop"></option>
+                </datalist>
+            </div>
+
+            <div class="form-floating mb-4">
+                <textarea class="form-control" id="productDescription" placeholder="description"></textarea>
+                <label for="productName">Product Description</label>
+            </div>
+
+            <div class="form-floating mb-4">
+                <input type="file" class="form-control" id="productImage" placeholder="image">
+                <label for="productImage">Upload Product Image</label>
+            </div>
+            <button class="btn btn-primary" onclick="addProduct()">Add Product</button>
+            <input type="search" class="form-control my-3" placeholder="Search product">
+        </div>
+
+        <div class="w-75 mx-auto">
+            <div class="row" id="myRow">
+            </div>
+        </div>
+    </main>
+
+    <script src="js/main.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
