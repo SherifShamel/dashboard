@@ -30,7 +30,7 @@ function addProduct() {
     productList.push(product);
     localStorage.setItem("products", JSON.stringify(productList));
 
-    display([productList]);
+    display(productList);
     // clearInputs();
 }
 
